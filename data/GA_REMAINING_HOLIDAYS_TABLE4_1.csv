@@ -1,0 +1,12 @@
+category,polygon_count,area_km2,fugro_polygon_count,fugro_area_km2,fugro_percent_of_total_remaining
+Equipment Failure,88,17.10,40,3.49,20.41
+Offtracks,8,19.20,2,0.07,0.36
+Shadow Zones,5026,312.94,4521,264.09,84.39
+Terrain Avoidance,146,218.79,120,116.34,53.17
+Lower Probability of Detection,7440,2510.09,7285,2379.72,94.81
+TOTAL_ALL_CLASSES,12708,3078.12,11968,2763.71,
+TOTAL_TRUE_HOLIDAYS_EXCL_LPD,5268,568.03,4683,383.99,
+
+# Source: ATSB Operational Search for MH370, Summary Report All Vessels, Table 4.1.
+# Scope: remaining holidays and LPDs at end of the ATSB-led operational search; includes Go Phoenix and DJ101.
+# Semantics: areas are aggregate totals only. They MUST NOT be spatially allocated to cells without authoritative geometry.

@@ -1,0 +1,5 @@
+id,declared_km2,geometry_km2,geometry_to_declared_ratio,status
+holiday_lepslope,12,1522.020,126.835,REJECT_SPATIAL_USE
+holiday_brokenridge,28,31541.246,1126.473,REJECT_SPATIAL_USE
+holiday_diamantina,18,29912.626,1661.813,REJECT_SPATIAL_USE
+holiday_equipment,8,6925.794,865.724,REJECT_SPATIAL_USE

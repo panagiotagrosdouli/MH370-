@@ -1,0 +1,19 @@
+metric,value,unit,interpretation,source
+review_radius,40,NM,Radius around WSPR proposed point reviewed by GA,ATSB_GA_2022
+proposed_lat,-33.177,deg,Godfrey proposed location; hypothesis only,ATSB_GA_2022
+proposed_lon,95.3,deg,Godfrey proposed location; hypothesis only,ATSB_GA_2022
+requested_area,17000,km2,Area requested for review,ATSB_GA_2022
+phase2_highres_reviewed,4900,km2,High-resolution Phase 2 sonar actually reviewed,ATSB_GA_2022
+phase2_review_fraction,0.29,fraction,Reviewed fraction of requested area,ATSB_GA_2022
+remaining_area,12100,km2,Area not covered by GA high-resolution review; includes OI/low-res/no-data,ATSB_GA_2022
+additional_missing_data,1.57,km2,Newly identified missing-data holidays,ATSB_GA_2022
+equipment_failure,5.37,km2,Holiday mechanism,ATSB_GA_2022
+lpd,48.91,km2,Lower probability of detection,ATSB_GA_2022
+off_tracks,0.17,km2,Holiday mechanism,ATSB_GA_2022
+terrain_avoidance,8.44,km2,Holiday mechanism,ATSB_GA_2022
+shadow_zones,8.33,km2,Holiday mechanism,ATSB_GA_2022
+total_holidays_lpd,72.79,km2,Total gaps and lower-quality areas in reviewed data,ATSB_GA_2022
+largest_holiday,21.7,km2,Long narrow LPD described in report,ATSB_GA_2022
+highres_within_10nm,nearly_all,text,Exception: small gap to southeast,ATSB_GA_2022
+GA_contacts,11,count,Additional contacts identified,ATSB_GA_2022
+anthropogenic_contacts,3,count,Isolated features; not categorized as aircraft debris field,ATSB_GA_2022

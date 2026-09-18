@@ -1,0 +1,5 @@
+id,declared_area_km2,lon_min,lon_max,lat_min,lat_max,assessment
+holiday_lepslope,12,93.6,94.1,-35.0,-34.7,REJECT_COARSE_RECTANGLE_AREA_MISMATCH
+holiday_brokenridge,28,88.0,90.0,-32.5,-31.0,REJECT_COARSE_RECTANGLE_AREA_MISMATCH
+holiday_diamantina,18,98.0,100.0,-37.0,-35.5,REJECT_COARSE_RECTANGLE_AREA_MISMATCH
+holiday_equipment,8,91.0,92.0,-37.2,-36.5,REJECT_COARSE_RECTANGLE_AREA_MISMATCH

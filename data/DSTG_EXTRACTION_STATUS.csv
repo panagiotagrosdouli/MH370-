@@ -1,0 +1,3 @@
+artifact,status,accepted_next_action,rejected_shortcut
+DSTG_F10_3_BTO_BFO,BLOCKED_ON_SOURCE_RENDERING,extract original PDF vector or calibrated original-PDF curve,guess samples from web snippets
+DSTG_F10_2_PRE_EOF_2D,NEEDS_NUMERICAL_SEMANTICS,recover particles or validated weight mapping,treat path colours as pixel probability

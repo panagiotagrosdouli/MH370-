@@ -1,0 +1,6 @@
+query,class,result,baseline_pd_allowed
+"HUGIN AUV MH370 Armada 86-05 mission track",AUV_TRACK_SEARCH,NOT_RECOVERED,false
+"Armada 86-05 AUV coordinates",AUV_TRACK_SEARCH,NOT_RECOVERED,false
+"Armada 78-06 AUV mission track",AUV_TRACK_SEARCH,NOT_RECOVERED,false
+"Armada 78-06/86-05 vessel KML",VESSEL_TRACK_PROXY,RECOVERABLE,false
+"2025-26 AUV operational reports",TEXTUAL_MISSION_EVIDENCE,RECOVERED,false

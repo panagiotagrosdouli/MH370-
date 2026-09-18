@@ -1,0 +1,7 @@
+token,target,result
+GP1500_6_Mission124_BS_Mosaic_1m_UTM45s.png,exact PNG,RECOVERED
+GP1500_6_Mission124,tiff sibling,NOT_RECOVERED
+GP1500_6_Mission124,gdb sibling,NOT_RECOVERED
+GP1500_6_Mission124,las_xyi sibling,NOT_RECOVERED
+Mission123,neighbouring product,NOT_RECOVERED
+Mission125,neighbouring product,NOT_RECOVERED

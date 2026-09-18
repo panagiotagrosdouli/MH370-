@@ -1,0 +1,5 @@
+artifact,status,evidence
+"iy57/camera/Fugro_Supporter/auv/processed/jpg/",RECOVERED_EXACT_ARCHIVED_PATH,"web-indexed historical THREDDS link"
+"iy57/gis/",RECOVERED_DIRECTORY_SEMANTICS,"official README quotation"
+"iy57/File_Links.txt",RECOVERED_EXISTENCE_ONLY,"official README quotation"
+"iy57/gis exact filenames",NOT_RECOVERED,"targeted web search"

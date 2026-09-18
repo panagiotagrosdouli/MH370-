@@ -1,0 +1,6 @@
+target,official_readme_support,priority,pd_direct
+iy57/File_Links.txt,"explicit bulk-download index",1,false
+iy57/gis,"contacts; coverages; data holiday database; generalised deep-tow/AUV tracklines",1,false
+iy57/nav,"vessel/deep-tow/AUV/ROV navigation; KML/KMZ/SHP/TXT/DXF/POS",2,false
+iy57/sidescan,"deep-tow/AUV SSS/SAS; PNG/TIF/IMG/XTF/GDB/JSF",2,false
+iy57/mbes,"bathymetry/backscatter/AUV MBES; includes GDB and geospatial rasters",3,false

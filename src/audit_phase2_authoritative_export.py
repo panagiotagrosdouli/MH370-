@@ -1,18 +1,27 @@
 #!/usr/bin/env python3
-"""Acceptance gate for authoritative Phase-2 residual polygon exports."""
-EXPECTED={"Equipment Failure":(88,17.10),"Offtracks":(8,19.20),"Shadow":(5026,312.94),"Terrain Avoidance":(146,218.79),"LPD":(7440,2510.09)}
-TOTAL_N=12708; TOTAL_A=3078.12
-def audit(rows,count_key="count",area_key="area_km2",class_key="class"):
- got={}
- for r in rows:
-  k=r[class_key]; n=int(r[count_key]); a=float(r[area_key])
-  N,A=got.get(k,(0,0.0)); got[k]=(N+n,A+a)
- failures=[]
- for k,(en,ea) in EXPECTED.items():
-  n,a=got.get(k,(0,0.0))
-  if n!=en: failures.append(f"{k}: count {n} != {en}")
-  if abs(a-ea)>0.05: failures.append(f"{k}: area {a:.2f} != {ea:.2f}")
- n=sum(x[0] for x in got.values()); a=sum(x[1] for x in got.values())
- if n!=TOTAL_N: failures.append(f"total count {n} != {TOTAL_N}")
- if abs(a-TOTAL_A)>0.10: failures.append(f"total area {a:.2f} != {TOTAL_A:.2f}")
- return failures
+"""Acceptance gate for an authoritative Phase-2 residual export.
+
+The 2022 GA/ATSB review is the currently verified primary aggregate benchmark:
+72.79 km2 of holidays/LPDs within the reviewed 40-NM area, including 71.22
+km2 documented during the original Phase-2 search plus 1.57 km2 of additional
+holidays identified in the 2022 review.
+
+Class areas are not a polygon-count checksum for the entire Phase-2 archive.
+Use them only when the imported dataset declares the same spatial scope.
+"""
+EXPECTED_AREA={"Additional missing data":1.57,"Equipment Failure":5.37,
+               "LPD":48.91,"Off-tracks":0.17,"Terrain avoidance":8.44,
+               "Shadow zones":8.33}
+TOTAL_AREA=72.79
+def audit_areas(rows, class_key="class", area_key="area_km2", tolerance=0.10):
+    got={}
+    for r in rows:
+        k=r[class_key]; got[k]=got.get(k,0.0)+float(r[area_key])
+    failures=[]
+    for k,e in EXPECTED_AREA.items():
+        if k in got and abs(got[k]-e)>tolerance:
+            failures.append(f"{k}: area {got[k]:.2f} != benchmark {e:.2f}")
+    total=sum(got.values())
+    if abs(total-TOTAL_AREA)>tolerance:
+        failures.append(f"total area {total:.2f} != benchmark {TOTAL_AREA:.2f}")
+    return failures

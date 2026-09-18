@@ -1,0 +1,7 @@
+target,result,interpretation
+https://mh370-api.ausseabed.gov.au/health,UNREACHABLE_FROM_CURRENT_WEB_RUNTIME,NOT_SERVICE_OFFLINE_CLAIM
+https://mh370-api.ausseabed.gov.au/products,UNREACHABLE_FROM_CURRENT_WEB_RUNTIME,NOT_SERVICE_OFFLINE_CLAIM
+"Visualisation and Coverage Summaries product detail",UNREACHABLE_FROM_CURRENT_WEB_RUNTIME,NOT_SERVICE_OFFLINE_CLAIM
+"official repo File_Links.txt",NOT_FOUND_IN_SOURCE_REPO,UNDERLYING_CATALOGUE_NOT_COMMITTED
+"official repo data holiday payload",NOT_FOUND_IN_SOURCE_REPO,NO_FILENAME_INFERENCE
+"official repo trackline payload",NOT_FOUND_IN_SOURCE_REPO,NO_FILENAME_INFERENCE
